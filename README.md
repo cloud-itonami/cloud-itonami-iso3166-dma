@@ -49,8 +49,8 @@ compliance department.
 | Ops | `:engagement/intake` · `:jurisdiction/assess` · `:filing/draft` · `:filing/submit` |
 | Flagship HARD check | `award-authority-insufficient` (Public Procurement and Disposal of Public Property Act, 2021 Second Schedule's DUAL, independently-escalating confirming-authority/approving-authority ladder, recomputed against the engagement's own declared contract value -- see `docs/adr/0001-architecture.md`) |
 | Compliance catalog | `src/statute/facts.cljk` -- Companies Act 1994, Labour Standards Act (Chap. 89:05), Protection of Employment Act (Chap. 89:02) |
-| Tests | `clojure -M:dev:test` |
-| Demo | `clojure -M:dev:run` |
+| Tests | `kbb -M:dev:test` |
+| Demo | `kbb -M:dev:run` |
 | Architecture ADR | [`docs/adr/0001-architecture.md`](docs/adr/0001-architecture.md) |
 
 `:filing/submit` is never in any phase's `:auto` set -- human sign-off
