@@ -48,7 +48,7 @@ compliance department.
 | Governor | `:market-entry-compliance-governor` |
 | Ops | `:engagement/intake` · `:jurisdiction/assess` · `:filing/draft` · `:filing/submit` |
 | Flagship HARD check | `award-authority-insufficient` (Public Procurement and Disposal of Public Property Act, 2021 Second Schedule's DUAL, independently-escalating confirming-authority/approving-authority ladder, recomputed against the engagement's own declared contract value -- see `docs/adr/0001-architecture.md`) |
-| Compliance catalog | `src/statute/facts.cljc` -- Companies Act 1994, Labour Standards Act (Chap. 89:05), Protection of Employment Act (Chap. 89:02) |
+| Compliance catalog | `src/statute/facts.cljk` -- Companies Act 1994, Labour Standards Act (Chap. 89:05), Protection of Employment Act (Chap. 89:02) |
 | Tests | `clojure -M:dev:test` |
 | Demo | `clojure -M:dev:run` |
 | Architecture ADR | [`docs/adr/0001-architecture.md`](docs/adr/0001-architecture.md) |
@@ -124,7 +124,7 @@ Alongside the market-entry / statute catalogs, this repo carries a
 `com-junkawasaki/root`) — national dishes, protected products, beverages,
 crafts, festivals and heritage sites for Dominica:
 
-- `src/culture/facts.cljc` — the catalog, source of truth (keyed by
+- `src/culture/facts.cljk` — the catalog, source of truth (keyed by
   uppercase ISO3, mirroring `statute.facts`).
 - `schema/culture.edn` — DataScript schema.
 - `data/culture-tx.edn` — derived DataScript tx-data (regenerated from
